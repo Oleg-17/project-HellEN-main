@@ -1,0 +1,67 @@
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+body {
+  display: block;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  transition: color $timing-function, background-color $timing-function;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
