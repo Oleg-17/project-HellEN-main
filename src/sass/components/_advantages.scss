@@ -1,0 +1,96 @@
+/* ОСОБЕННОСТИ */
+
+.advantages {
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 49px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 50px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 96px;
+    padding-bottom: 130px;
+  }
+}
+
+.advantages__list {
+  margin: 0 auto;
+  padding: 0 0;
+
+  @media screen and (max-width: 767px) {
+    max-width: 216px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: inline-block;
+  width: 216px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 60px) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.advantages__icon {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1279px) {
+    width: 59px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100px;
+    height: 102px;
+  }
+}
+
+
+.advantages__text {
+  position: absolute;
+  width: 146px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+ 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  color: $primary-text-color;
+  @media screen and (max-width: 767px) {
+    
+   
+ 
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    // width: 146px;
+   
+  }
+  @media screen and (min-width: $desktop) {
+    width: 366px;
+    font-size: 20px;
+    line-height: 1.65;
+    margin-left: -17px;
+    margin-top: 20px;
+  }
+
+  
+}
